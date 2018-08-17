@@ -8,11 +8,12 @@ import { Provider, connect } from 'react-redux';
 import {createLogger} from 'redux-logger';
 import promiseMiddleware from 'redux-promise-middleware';
 
-import dogReducer from './Reducers/dogReducer';
+import flightReducer from './Reducers/flightReducer';
 
-import DogList from './Components/DogList';
-import DogDetail from './Components/DogDetail';
-import RNCameraRollPicker from './RNCameraRollPicker';
+//import DogList from './Components/DogList';
+import FlightList from './Components/FlightList';
+//import DogDetail from './Components/DogDetail';
+//import RNCameraRollPicker from './RNCameraRollPicker';
 
 import * as Url from './Constants/url';
 
@@ -26,7 +27,7 @@ const middleware = applyMiddleware(promiseMiddleware(), createLogger());
 // });
 
 // const store = createStore(reducers, middleware);
-const store = createStore(dogReducer, middleware);
+const store = createStore(flightReducer, middleware);
 
 
 
@@ -38,14 +39,12 @@ const store = createStore(dogReducer, middleware);
 // const store = createStore(reducer, applyMiddleware(axiosMiddleware(client)));
 
 export default () => {
-	Navigation.registerComponent('example.FirstTabScreen', () => DogList,store,Provider);
-	Navigation.registerComponent('example.SecondTabScreen', () => DogDetail,store,Provider);
-	Navigation.registerComponent('example.RNCameraRollPicker', () => RNCameraRollPicker,store,Provider);
+	Navigation.registerComponent('example.FirstTabScreen', () => FlightList,store,Provider);
 	
 	Navigation.startSingleScreenApp({
 	  screen: {
 			screen: 'example.FirstTabScreen', // unique ID registered with Navigation.registerScreen
-			title: 'instaDog', // title of the screen as appears in the nav bar (optional)
+			title: 'skY&DEX', // title of the screen as appears in the nav bar (optional)
 			navigatorStyle: {}, // override the navigator style for the screen, see "Styling the navigator" below (optional)
 			navigatorButtons: {} // override the nav buttons for the screen, see "Adding buttons to the navigator" below (optional)
 	  }
