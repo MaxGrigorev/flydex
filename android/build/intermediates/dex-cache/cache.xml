@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.3.0_39d5456bb55cbcfd98791e454279107b93c69ceb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_4887676d724b27fb3ce9c63fe856a089e7c2d1e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.aurelhubert\ahbottomnavigation\2.0.6\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c8ba41bea7f78f8bdf3a803b9d08eb3fff416706">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.aurelhubert-ahbottomnavigation-2.0.6_9367e9621a4c79f978938ad17be195a404cdc0fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\test\test\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.55.4\jars\libs\infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_7eecb8086fa465cacf793cd5faeb3e6282430324.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.3.0_f11d2e36ede9313a416e8ccf19e8306d6da2ff75.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.android.support\transition\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.3.1_f7fe5159c2d933ce359a2ec11c53008f8b679a4a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_4887676d724b27fb3ce9c63fe856a089e7c2d1e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.3.1_796280fb4409a38a7b01e83f3cc7374e1dd19aed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.3.1_d5c1c908c9a32dcbe6a3ca8c762aef2113e9a867.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_1778936fc56bc18592392189841e3eb4be66b3a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.3.1_578f6d236724afe0fa2b4a3ba26e6ff94146e4c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.3.1_77885117c7b1b1044af1a59778ba7c14cadee4e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.3.1_2b49ae3b7d5b9ed92c664afda64e657e8d873711.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.android.support\design\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.3.1_bb224e2cf09f3af38d2e3106e61e5b05a8f18d2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\test\test\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.3.0_74ec70c83388eb5d45108f3688e04bd0d6f7cbb2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_c66812206b653d58742df2e3b69a456e5e2b4526.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_92c32542efc94eb4bf8abd16045f8bc07aa565c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_1778936fc56bc18592392189841e3eb4be66b3a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.3.0_fdd4946e7f4866b1e3eba72c3654da72ecc707a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\test\react-native-navigation\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0e0b5d5ad70eb73e694f8fa35518aca16fc28b96">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\test-react-native-navigation-unspecified_103569500a0e6a3024095a379e0c817652a22de5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.3.1_d6495217b1341938d2cecb5b851641b83d76fb3f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\library-2.4.0_f20174fb6b751dba47c76601ea20eb5f342d1723.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.55.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.55.4_4a2bda2832d96970dfe58ddaf28f429e6852f8f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\test\test\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.55.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.55.4_047324b5f559697467a9907682d47178e630bca5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.balysv.materialmenu\material-menu\1.5.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1f6ff1728c297524e82b875ce2dfda946f4bca41">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.balysv.materialmenu-material-menu-1.5.4_3fee4cb91fa4f29f11805161fe481caa32ff2ab1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.balysv.materialmenu\material-menu-toolbar\1.5.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="55d7bf547c88cb7c8c7c5cdbf3b06dd66c9750f8">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.balysv.materialmenu-material-menu-toolbar-1.5.4_6ab787edcfacc855beaaef969c54e3b38cad55bf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.3.1_19281706933375a0ad7963d119a25c8fb8cd3ac2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.3.0_cbde5633ed47d428194205e34b4f0e095b9ed603.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.3.0_1e9645686687bd848f70afb4354fc7b35b07ac07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\test\test\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.3.0_aa22821aabff13bd231e3920b881b0d798f4acb2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1_8a67088ea8d26e61a18d7373e166a1cae552f029.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.3.0_e5dacc3ef92c12c13eedc3eac45d6c872b55e1a8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.3.1_3ce8ab7b02f8909de6b34ba7bf09568383d532f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.55.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.55.4_1f3a91a49de73ac7b17665378b7545ee6154637e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_cda2ef53cb985d59cb658935d5aab42b7dc86227.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\test\test\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.3.0_88eb31024a858f120e36635d56f659f5e83775bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.balysv.materialmenu\material-menu\1.5.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1f6ff1728c297524e82b875ce2dfda946f4bca41">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.balysv.materialmenu-material-menu-1.5.4_b2f1165f81b9326cd6a1957942352ce35fb7ff4e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.3.1_929dbbc8a4e66d94540e72885160dfa8ea306854.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_da472cede4b3dcb350a095d1ab180ddf33ebb724.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\test\test\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.3.0_edc7bb10dd2f93ea230edcb386f52e4775e8e447.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.aurelhubert\ahbottomnavigation\2.0.6\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c8ba41bea7f78f8bdf3a803b9d08eb3fff416706">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.aurelhubert-ahbottomnavigation-2.0.6_906bdee91fe1882ffa898d39aebeb0e365bdc682.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\test\test\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_8a652f29a76b1f3a3252dfcba2ffec93808b869f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.3.1_8f54d14dddd6f3b6e7979dc85696f46b9cd00960.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\test\react-native-navigation\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ab538d978c1fcab7f89c5f96ad75f1305d4f7e80">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\test-react-native-navigation-unspecified_cd1edaa8c9432ee300188c5fc0fe69f74dda7ade.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_42193adc78ff287ff2c62b1ed7f0d8a0a9d97e06.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.3.1_aea85b7d8153c12d6fd5ee875b9e36cfceeb2a00.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\test\test\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1_2a6fd79a1172fba78bde9705b8253d43520b4cfb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_da472cede4b3dcb350a095d1ab180ddf33ebb724.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.55.4\jars\libs\infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_d7ce1f6a957c619fa80212d72c8219e7f24512c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.android.support\design\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.3.1_02f26966ec44a96dd052a242f60873a6b11d73a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.android.support\transition\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.3.1_0eba6dc1fb6049f85ca791be20145cde2c66482f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_cda2ef53cb985d59cb658935d5aab42b7dc86227.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.3.1_db51afa420c1a07e2445c56343a2bad2a898de83.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_1d2e73bb922b45299a3fe1da5c5205006f32b98b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.3.0_acd796c13b903ec58d49f4cf715f52d3de225c64.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.3.0_cea4e2ede7564dcb8b3534925f1c29196c6f43ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_cdb0590b899abd728abdbe0a8ca476761c2249b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.3.1_ac89144c0f3212a19eeaeb1ab6d88088a72b4900.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.balysv.materialmenu\material-menu-toolbar\1.5.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="55d7bf547c88cb7c8c7c5cdbf3b06dd66c9750f8">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.balysv.materialmenu-material-menu-toolbar-1.5.4_5a40d91cd62fe0c1ba7395fa0a8fb0c9bd5da8ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.55.4\jars\libs\infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_52dbe5a9c6814a6e9f675d6a2d08439c1d404130.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\test\test\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.3.0_05c3167f3203074697a7de52d41f20c2b8b7098a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.3.1_20ba085eb739ede6a5dfa18080dea3cdf258063a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_0c9a81ca7d543a63165f68448e139aeefce3a92a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.3.0_f59827988de2634404031b3d441697047578e539.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_cdb0590b899abd728abdbe0a8ca476761c2249b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.3.0_38f3760c613685ccda4f0383b865cd29d2870077.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.3.1_4efb9acdf5a3987e24bde5bf78eea9899d728e6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\test\test\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.1_6854da4ffe95b674dd365b70048c933c6c2948d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.3.1_1fbc3fd096afb41dd3191fd42ab8c30d3f4f3e05.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.3.1_6a0664d873a270bfe9da4b235aa828107125a60b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\test\test\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_9a07e13c16e44a19927a581e00255b8092a6c4d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\test\test\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.3.0_900da7934fcd3fbb056a545c21afd07cd1a233a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\test\test\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_6f454a8de113e55dc2659a4db15e9ebb127ca8af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.3.1_e5f9bfd066f2971d491309f31907cbd168818aed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.3.0_c52385fddb8e02b7376c9fb7e80064f2d237f324.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.3.1_93e47ee692a2cbb740e1c23a01f31e49d54b8204.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_c055c5c4ecf1c3b103efefeeb0ec4b4e706925d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_2478f66f5dc20b4687aeeae4dc29462b4c12153b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_2478f66f5dc20b4687aeeae4dc29462b4c12153b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\PC\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="C:\GB\test\test\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_c055c5c4ecf1c3b103efefeeb0ec4b4e706925d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\skY\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="C:\GB\Projects\skY\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.3.0_42366cec2edd7b65c2929424ecdcc513300f8435.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\GB\Projects\instaDog\client\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\GB\Projects\instaDog\client\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.3.1_cfa66d5de8272e613f273cc31f3e47098869e79f.jar" />
+    </item>
+
+</items>
