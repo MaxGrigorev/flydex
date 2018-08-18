@@ -48,6 +48,8 @@ class FlightList extends Component {
     this.props.likeDog(item._id)
   }
 
+
+
   componentDidMount() {
     //this.props.listDogs();
     this.props.getAirportInfo();
@@ -64,7 +66,7 @@ class FlightList extends Component {
       >
     <View style={{flex: 1,flexDirection: 'row'}}>
       <Image  source={(this.props.dogsLike.indexOf(item._id)!=-1) ? require('../img/icons8-heart-outline-50-red.png') :require('../img/icons8-heart-outline-50.png')}  style={{width: 40, height: 40,}}/>
-      <Text style={{fontSize:30}}>{item.departureAirportFsCode} </Text>
+      <Text style={{fontSize:30}}>{this.props.allAirport[item.departureAirportFsCode].city} {item.departureAirportFsCode} </Text>
       <Text style={{fontSize:30}}>{item.carrierFsCode} </Text>
       <Text style={{fontSize:30}}>{item.flightNumber} </Text>
       <Text style={{fontSize:30}}>{item.status} </Text>
@@ -113,9 +115,11 @@ const mapStateToProps = state => {
 	console.log('mapStateToProps', state)
   let storedDogs = state.dogs.map(dog => ({...dog }));
   let storedDogsLike = state.dogsLike.map(dogLike => (dogLike));
+  let storedallAirport={...state.allAirport};
   return {
     dogs: storedDogs,
-    dogsLike:storedDogsLike
+    dogsLike:storedDogsLike,
+    allAirport:storedallAirport,
   };
 };
 

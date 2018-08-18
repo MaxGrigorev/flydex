@@ -12,6 +12,7 @@ import flightReducer from './Reducers/flightReducer';
 
 //import DogList from './Components/DogList';
 import FlightList from './Components/FlightList';
+import SplashScreen from './Components/SplashScreen';
 //import DogDetail from './Components/DogDetail';
 //import RNCameraRollPicker from './RNCameraRollPicker';
 
@@ -40,12 +41,16 @@ const store = createStore(flightReducer, middleware);
 
 export default () => {
 	Navigation.registerComponent('example.FirstTabScreen', () => FlightList,store,Provider);
+	Navigation.registerComponent('example.SplashScreen', () => SplashScreen,store,Provider);
 	
 	Navigation.startSingleScreenApp({
 	  screen: {
-			screen: 'example.FirstTabScreen', // unique ID registered with Navigation.registerScreen
+			screen: 'example.SplashScreen', // unique ID registered with Navigation.registerScreen
 			title: 'skY&DEX', // title of the screen as appears in the nav bar (optional)
-			navigatorStyle: {}, // override the navigator style for the screen, see "Styling the navigator" below (optional)
+			navigatorStyle: {
+				navBarHidden: true,
+				screenBackgroundColor: 'black',
+			}, // override the navigator style for the screen, see "Styling the navigator" below (optional)
 			navigatorButtons: {} // override the nav buttons for the screen, see "Adding buttons to the navigator" below (optional)
 	  }
 	});
