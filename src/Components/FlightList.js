@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import { connect } from 'react-redux';
 
-import { listDogs, likeDog, likePress,getAirportInfo } from '../Reducers/flightReducer';
+import { listDogs, likeDog, likePress,getAirportInfo, getArrival,getDeparture,getDelay } from '../Reducers/flightReducer';
 import * as Url from '../Constants/url';
 
 class FlightList extends Component {
@@ -52,8 +52,23 @@ class FlightList extends Component {
     this.props.likeDog(item._id)
   }
 
-  TabVilet=(item)=>{
+  TabVilet=(type)=>{
     console.log('TabVilet')
+
+    switch (type) {
+      case 'arr':
+        console.log('TabVilet arr')
+        this.props.getArrival(type);
+        break;
+      case 'dep':
+        console.log('TabVilet dep')
+        this.props.getDeparture(type);
+        break;
+      case 'del':
+        console.log('TabVilet del')
+        this.props.getDelay(type);
+        break;
+      }
   }
 
 
@@ -103,24 +118,29 @@ class FlightList extends Component {
     return (
       <View >
         <View style={{height:40,flexDirection: 'row',borderColor: 'gray',borderWidth: 1}} >
+
           <TouchableOpacity
-      style={{flex: 1,height:40,borderColor: 'gray',borderWidth: 1}}
-      onPress={this.TabVilet.bind(this,'A')}
-      >
-      <Text style={{fontSize:30}}>test</Text>
+            style={{flex: 1,height:40,borderColor: 'gray',borderWidth: 1}}
+            onPress={this.TabVilet.bind(this,'arr')}
+            >
+              <Text style={{fontSize:30,flex: 1,}}>Arrival</Text>
           </TouchableOpacity>
+
           <TouchableOpacity
-     style={{flex: 1,height:40,borderColor: 'gray',borderWidth: 1}}
-      onPress={this.TabVilet.bind(this,'A')}
-      >
-       <Text style={{fontSize:30}}>test</Text>
+            style={{flex: 1,height:40,borderColor: 'gray',borderWidth: 1}}
+            onPress={this.TabVilet.bind(this,'dep')}
+            >
+              <Text style={{fontSize:30,flex: 1,}}>Departure</Text>
           </TouchableOpacity>
+
           <TouchableOpacity
-      style={{flex: 1,height:40,borderColor: 'gray',borderWidth: 1}}
-      onPress={this.TabVilet.bind(this,'A')}
-      > 
-      <Text style={{fontSize:30}}>test</Text>
+            style={{flex: 1,height:40,borderColor: 'gray',borderWidth: 1}}
+            onPress={this.TabVilet.bind(this,'del')}
+            >
+              <Text style={{fontSize:30,flex: 1,}}>Delay</Text>
           </TouchableOpacity>
+
+          
         </View >
       <TextInput
       style={{height:40, borderColor: 'gray', borderWidth: 1}}
@@ -160,7 +180,7 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = {
-  listDogs,likeDog,likePress,getAirportInfo,
+  listDogs,likeDog,likePress,getAirportInfo,getArrival,getDeparture,getDelay,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(FlightList);

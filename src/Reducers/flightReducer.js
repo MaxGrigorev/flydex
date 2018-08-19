@@ -118,6 +118,31 @@ export function getAirportInfo() {
     payload: axios.get('https://api.flightstats.com/flex/flightstatus/rest/v2/json/airport/status/SVO/arr/2018/8/17/23?appId=b842b7e6&appKey=4682ce2ea97524e76b0e722f83a66b90&utc=false&numHours=6&maxFlights=50')
   }
 }
+//getArrival,getDeparture,getDelay
+export function getArrival(type,date) {
+  console.log('getArrival' ,type)
+  // let fscode='SVO'
+  return {
+    type: GET_DOG,
+    payload: axios.get('https://api.flightstats.com/flex/flightstatus/rest/v2/json/airport/status/SVO/arr/2018/8/17/23?appId=b842b7e6&appKey=4682ce2ea97524e76b0e722f83a66b90&utc=false&numHours=6&maxFlights=50')
+  }
+}
+
+export function getDeparture(type,date) {
+  let fscode='SVO'
+  return {
+    type: GET_DOG,
+    payload: axios.get('https://api.flightstats.com/flex/flightstatus/rest/v2/json/airport/status/'+fscode+'/'+type+'/2018/8/17/23?appId=b842b7e6&appKey=4682ce2ea97524e76b0e722f83a66b90&utc=false&numHours=6&maxFlights=50')
+  }
+}
+
+export function getDelay(type,date) {
+  let fscode='SVO'
+  return {
+    type: GET_DOG,
+    payload: axios.get('https://api.flightstats.com/flex/flightstatus/rest/v2/json/airport/status/'+fscode+'/'+type+'/2018/8/17/23?appId=b842b7e6&appKey=4682ce2ea97524e76b0e722f83a66b90&utc=false&numHours=6&maxFlights=50')
+  }
+}
 
 export function setFlag() {
   return {
