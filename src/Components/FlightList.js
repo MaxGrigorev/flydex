@@ -9,9 +9,7 @@ import {
   TextInput
 } from 'react-native';
 import { connect } from 'react-redux';
-
-import { listDogs, likeDog, likePress,getAirportInfo} from '../Reducers/flightReducer';
-import * as Url from '../Constants/url';
+import { listDogs, getAirportInfo} from '../Reducers/flightReducer';
 import {status} from '../Constants/status';
 
 class FlightList extends Component {
@@ -40,7 +38,7 @@ class FlightList extends Component {
       tab_type: 'arr',
     };
     this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent.bind(this));
-    //this.likeHandle = this.likeHandle.bind(this);
+
   }
 
   onNavigatorEvent(event) { // this is the onPress handler for the two buttons together
@@ -53,38 +51,6 @@ class FlightList extends Component {
         })
       }
     }
-  }
-
-  // onNavigatorEvent(event) { // this is the onPress handler for the two buttons together
-  //   console.log('onNavigatorEvent')
-  //   if (event.type == 'NavBarButtonPress') { // this is the event type for button presses
-  //     console.log('event.id == edit')
-  //     if (event.id == 'edit') { // this is the same id field from the static navigatorButtons definition
-  //       console.log('event.id == edit')
-  //       this.props.navigator.push({
-  //         screen: 'example.ChangeAirportsScreen',
-  //         title: 'Change Airports',
-  //       })
-  //     }
-  //   }
-  // }
-
-  // toggleFAB = () => {
-  //   this.props.navigator.setButtons({
-  //         fab: {
-  //           collapsedId: 'share',
-  //           collapsedIcon: require('../img/icons8-plus-math-60.png'),
-  //           backgroundColor: '#ff505c',
-  //         },
-  //         animated: true
-  //       });
-  // }
-
-  likeHandle=(item)=>{
-    console.log('this.props.dogsLike',this.props.dogsLike)
-
-    this.props.likePress(item._id,this.props.dogsLike)
-    this.props.likeDog(item._id)
   }
 
   TabVilet=(type)=>{
@@ -102,7 +68,6 @@ class FlightList extends Component {
   }
 
   componentDidMount() {
-    //this.props.listDogs();
     this.props.getAirportInfo('arr',this.props.currentAirport);
   }
 
@@ -113,11 +78,9 @@ class FlightList extends Component {
 	  
     <TouchableOpacity
       style={styles.item}
-      onPress={this.likeHandle.bind(this,item)}
       >
       <View style={{flex: 1,flexDirection: 'row'}}>
-        <Image  source={(this.props.dogsLike.indexOf(item._id)!=-1) ? require('../img/icons8-heart-outline-50-red.png') :require('../img/icons8-heart-outline-50.png')}  style={{width: 40, height: 40,}}/>
-  <Text style={{fontSize:30}}> {(this.state.tab_type=='arr') ? item.departureAirportFsCode : item.arrivalAirportFsCode} </Text>
+        <Text style={{fontSize:30}}> {(this.state.tab_type=='arr') ? item.departureAirportFsCode : item.arrivalAirportFsCode} </Text>
         <Text style={{fontSize:30}}>{item.carrierFsCode} </Text>
         <Text style={{fontSize:30}}>{item.flightNumber} </Text>
         <Text style={{fontSize:30}}>{status[item.status]} </Text>
@@ -162,17 +125,17 @@ class FlightList extends Component {
 
           
         </View >
-      <TextInput
-      style={{height:40, borderColor: 'gray', borderWidth: 1}}
-      onChangeText={(text_breed) => this.setState({text_breed})}
-      value={this.state.text_breed}
-    />
-      <FlatList
-        styles={styles.container}
-        data={ltt}
-        renderItem={this.renderItem}
-		keyExtractor={(item, index) =>  index.toString()}
-      />
+        <TextInput
+          style={{height:40, borderColor: 'gray', borderWidth: 1}}
+          onChangeText={(text_breed) => this.setState({text_breed})}
+          value={this.state.text_breed}
+        />
+        <FlatList
+          styles={styles.container}
+          data={ltt}
+          renderItem={this.renderItem}
+        keyExtractor={(item, index) =>  index.toString()}
+        />
       </View >
     );
   }
@@ -190,19 +153,17 @@ const mapStateToProps = state => {
 
 	console.log('mapStateToProps', state)
   let storedDogs = state.dogs.map(dog => ({...dog }));
-  let storedDogsLike = state.dogsLike.map(dogLike => (dogLike));
   let storedAllAirport={...state.allAirport};
   let storedCurrentAirport={...state.currentAirport};
   return {
     dogs: storedDogs,
-    dogsLike:storedDogsLike,
     allAirport:storedAllAirport,
     currentAirport:storedCurrentAirport,
   };
 };
 
 const mapDispatchToProps = {
-  listDogs,likeDog,likePress,getAirportInfo,
+  listDogs,getAirportInfo,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(FlightList);

@@ -10,9 +10,7 @@ import {
 } from 'react-native';
 import { connect } from 'react-redux';
 
-import { listDogs, likeDog, likePress,getAirportInfo,changeAirport} from '../Reducers/flightReducer';
-import * as Url from '../Constants/url';
-import {status} from '../Constants/status';
+import { changeAirport} from '../Reducers/flightReducer';
 
 class ChangeAirportsScreen extends Component {
 
@@ -21,23 +19,9 @@ class ChangeAirportsScreen extends Component {
 
     this.state = {
       text_breed: '',
-      tab_type: 'arr',
     };
-    //this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent.bind(this));
     this.changeHandle = this.changeHandle.bind(this);
   }
-
-
-  // toggleFAB = () => {
-  //   this.props.navigator.setButtons({
-  //         fab: {
-  //           collapsedId: 'share',
-  //           collapsedIcon: require('../img/icons8-plus-math-60.png'),
-  //           backgroundColor: '#ff505c',
-  //         },
-  //         animated: true
-  //       });
-  // }
 
   changeHandle=(item)=>{
     console.log('this.props.dogsLike',this.props.dogsLike)
@@ -52,20 +36,6 @@ class ChangeAirportsScreen extends Component {
   });
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    // if (this.state.tab_type!==nextState.tab_type) {
-    //   return false;
-    // }
-    return true;
-  }
-
-  componentDidMount() {
-    //this.props.listDogs();
-    //this.props.getAirportInfo('arr',this.props.currentAirport);
-  }
-
-//renderItem={({item}) => <View><Image source={{uri: item._id}} style={{width: 400, height: 400}}/><Text style={styles.item}>{item.breed}</Text></View>}
-//{this.props.allAirport[item.departureAirportFsCode].city}
   renderItem = ({ item }) => (
     <View >
 	  
@@ -81,14 +51,9 @@ class ChangeAirportsScreen extends Component {
     </View >
   );
   render() {
-    //this.toggleFAB();
-    const { allAirport } = this.props;
-
-    let allAirportArray=Object.keys(allAirport).map((key, index)=>allAirport[key]);
-   
+    const { allAirport } = this.props
+    let allAirportArray=Object.keys(allAirport).map((key, index)=>allAirport[key])
     let ltt=allAirportArray.filter(dog=>(-1<dog.city.indexOf(this.state.text_breed)))
-    //if (this.state.tab_type==='del') ltt=ltt.filter(dog=>(dog.status==='D'))
-    console.log('allAirport', allAirportArray)
 
     return (
       <View >
@@ -120,15 +85,13 @@ const mapStateToProps = state => {
 
 	console.log('mapStateToProps', state)
   let storedAllAirport={...state.allAirport};
-  let storedCurrentAirport={...state.currentAirport};
   return {
     allAirport:storedAllAirport,
-    currentAirport:storedCurrentAirport,
   };
 };
 
 const mapDispatchToProps = {
-  getAirportInfo,changeAirport
+  changeAirport
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ChangeAirportsScreen);
