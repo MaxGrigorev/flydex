@@ -58,7 +58,7 @@ class FlightList extends Component {
     console.log('TabVilet')
     this.setState({tab_type: type});
     if (type==='del') type='dep';
-    this.props.getAirportInfo(type);
+    this.props.getAirportInfo(type,this.props.currentAirport);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -70,7 +70,7 @@ class FlightList extends Component {
 
   componentDidMount() {
     //this.props.listDogs();
-    this.props.getAirportInfo();
+    this.props.getAirportInfo('arr',this.props.currentAirport);
   }
 
 //renderItem={({item}) => <View><Image source={{uri: item._id}} style={{width: 400, height: 400}}/><Text style={styles.item}>{item.breed}</Text></View>}
@@ -158,11 +158,13 @@ const mapStateToProps = state => {
 	console.log('mapStateToProps', state)
   let storedDogs = state.dogs.map(dog => ({...dog }));
   let storedDogsLike = state.dogsLike.map(dogLike => (dogLike));
-  let storedallAirport={...state.allAirport};
+  let storedAllAirport={...state.allAirport};
+  let storedCurrentAirport={...state.currentAirport};
   return {
     dogs: storedDogs,
     dogsLike:storedDogsLike,
-    allAirport:storedallAirport,
+    allAirport:storedAllAirport,
+    currentAirport:storedCurrentAirport,
   };
 };
 

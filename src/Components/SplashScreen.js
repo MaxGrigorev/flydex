@@ -68,7 +68,7 @@ class SplashScreen extends Component {
       setFlag()
       this.props.navigator.resetTo({
         screen: 'example.FirstTabScreen',
-        title: 'flY&DEX',
+        title: 'Sheremetyevo Airport',
     });
     }
 
