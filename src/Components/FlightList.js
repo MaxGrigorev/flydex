@@ -10,8 +10,9 @@ import {
 } from 'react-native';
 import { connect } from 'react-redux';
 
-import { listDogs, likeDog, likePress,getAirportInfo, getArrival,getDeparture,getDelay } from '../Reducers/flightReducer';
+import { listDogs, likeDog, likePress,getAirportInfo} from '../Reducers/flightReducer';
 import * as Url from '../Constants/url';
+import {status} from '../Constants/status';
 
 class FlightList extends Component {
 
@@ -20,6 +21,7 @@ class FlightList extends Component {
 
     this.state = {
       text_breed: '',
+      tab_type: 'arr',
     };
     //this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent.bind(this));
     //this.likeHandle = this.likeHandle.bind(this);
@@ -54,24 +56,17 @@ class FlightList extends Component {
 
   TabVilet=(type)=>{
     console.log('TabVilet')
-
-    switch (type) {
-      case 'arr':
-        console.log('TabVilet arr')
-        this.props.getArrival(type);
-        break;
-      case 'dep':
-        console.log('TabVilet dep')
-        this.props.getDeparture(type);
-        break;
-      case 'del':
-        console.log('TabVilet del')
-        this.props.getDelay(type);
-        break;
-      }
+    this.setState({tab_type: type});
+    if (type==='del') type='dep';
+    this.props.getAirportInfo(type);
   }
 
-
+  shouldComponentUpdate(nextProps, nextState) {
+    if (this.state.tab_type!==nextState.tab_type) {
+      return false;
+    }
+    return true;
+  }
 
   componentDidMount() {
     //this.props.listDogs();
@@ -89,10 +84,10 @@ class FlightList extends Component {
       >
       <View style={{flex: 1,flexDirection: 'row'}}>
         <Image  source={(this.props.dogsLike.indexOf(item._id)!=-1) ? require('../img/icons8-heart-outline-50-red.png') :require('../img/icons8-heart-outline-50.png')}  style={{width: 40, height: 40,}}/>
-        <Text style={{fontSize:30}}> {item.departureAirportFsCode} </Text>
+  <Text style={{fontSize:30}}> {(this.state.tab_type=='arr') ? item.departureAirportFsCode : item.arrivalAirportFsCode} </Text>
         <Text style={{fontSize:30}}>{item.carrierFsCode} </Text>
         <Text style={{fontSize:30}}>{item.flightNumber} </Text>
-        <Text style={{fontSize:30}}>{item.status} </Text>
+        <Text style={{fontSize:30}}>{status[item.status]} </Text>
       </View >
       <View style={{flex: 1,flexDirection: 'row'}}>
         <Text style={{fontSize:15}}>{item.departureDate.dateLocal} -- {item.arrivalDate.dateLocal}</Text>
@@ -104,17 +99,9 @@ class FlightList extends Component {
     //this.toggleFAB();
     const { dogs } = this.props;
     let ltt=dogs.filter(dog=>(-1<dog.flightNumber.indexOf(this.state.text_breed)))
+    if (this.state.tab_type==='del') ltt=ltt.filter(dog=>(dog.status==='D'))
     console.log('ltt', ltt)
-    //если запускаем без сервера
-    //const dogs=[{"_id":"5b4edc6249d74f30e2b46566","breed":"springer-english","img":"https://images.dog.ceo/breeds/springer-english/n02102040_7011.jpg"},
-    //		{"_id":"5b4edca449d74f30e2b46567","breed":"kelpie","img":"https://images.dog.ceo/breeds/kelpie/n02105412_3078.jpg"},{"_id":"5b4edccd49d74f30e2b46568","breed":"rottweiler","img":"https://images.dog.ceo/breeds/rottweiler/n02106550_2832.jpg"},{"_id":"5b4edcf449d74f30e2b46569","breed":"beagle","img":"https://images.dog.ceo/breeds/beagle/n02088364_9650.jpg"},
-    //		{"_id":"5b4edca449d74f30e2b46567","breed":"kelpie","img":"https://images.dog.ceo/breeds/kelpie/n02105412_3078.jpg"},{"_id":"5b4edccd49d74f30e2b46568","breed":"rottweiler","img":"https://images.dog.ceo/breeds/rottweiler/n02106550_2832.jpg"},{"_id":"5b4edcf449d74f30e2b46569","breed":"beagle","img":"https://images.dog.ceo/breeds/beagle/n02088364_9650.jpg"},
-    //		{"_id":"5b4edca449d74f30e2b46567","breed":"kelpie","img":"https://images.dog.ceo/breeds/kelpie/n02105412_3078.jpg"},{"_id":"5b4edccd49d74f30e2b46568","breed":"rottweiler","img":"https://images.dog.ceo/breeds/rottweiler/n02106550_2832.jpg"},{"_id":"5b4edcf449d74f30e2b46569","breed":"beagle","img":"https://images.dog.ceo/breeds/beagle/n02088364_9650.jpg"},
-    //		{"_id":"5b4edca449d74f30e2b46567","breed":"kelpie","img":"https://images.dog.ceo/breeds/kelpie/n02105412_3078.jpg"},{"_id":"5b4edccd49d74f30e2b46568","breed":"rottweiler","img":"https://images.dog.ceo/breeds/rottweiler/n02106550_2832.jpg"},{"_id":"5b4edcf449d74f30e2b46569","breed":"beagle","img":"https://images.dog.ceo/breeds/beagle/n02088364_9650.jpg"},
-    //		{"_id":"5b4edca449d74f30e2b46567","breed":"kelpie","img":"https://images.dog.ceo/breeds/kelpie/n02105412_3078.jpg"},{"_id":"5b4edccd49d74f30e2b46568","breed":"rottweiler","img":"https://images.dog.ceo/breeds/rottweiler/n02106550_2832.jpg"},{"_id":"5b4edcf449d74f30e2b46569","breed":"beagle","img":"https://images.dog.ceo/breeds/beagle/n02088364_9650.jpg"},
-    //		{"_id":"5b4edca449d74f30e2b46567","breed":"kelpie","img":"https://images.dog.ceo/breeds/kelpie/n02105412_3078.jpg"},{"_id":"5b4edccd49d74f30e2b46568","breed":"rottweiler","img":"https://images.dog.ceo/breeds/rottweiler/n02106550_2832.jpg"},{"_id":"5b4edcf449d74f30e2b46569","breed":"beagle","img":"https://images.dog.ceo/breeds/beagle/n02088364_9650.jpg"},
-    //    {"_id":"5b4edd1749d74f30e2b4656a","breed":"akita","img":"https://images.dog.ceo/breeds/akita/Akita_Inu_dog.jpg"}]
-	  //console.log('dogs',dogs)
+
     return (
       <View >
         <View style={{height:40,flexDirection: 'row',borderColor: 'gray',borderWidth: 1}} >
@@ -180,7 +167,7 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = {
-  listDogs,likeDog,likePress,getAirportInfo,getArrival,getDeparture,getDelay,
+  listDogs,likeDog,likePress,getAirportInfo,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(FlightList);
