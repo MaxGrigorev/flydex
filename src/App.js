@@ -13,6 +13,7 @@ import flightReducer from './Reducers/flightReducer';
 //import DogList from './Components/DogList';
 import FlightList from './Components/FlightList';
 import SplashScreen from './Components/SplashScreen';
+import ChangeAirportsScreen from './Components/ChangeAirportsScreen';
 //import DogDetail from './Components/DogDetail';
 //import RNCameraRollPicker from './RNCameraRollPicker';
 
@@ -42,7 +43,8 @@ const store = createStore(flightReducer, middleware);
 export default () => {
 	Navigation.registerComponent('example.FirstTabScreen', () => FlightList,store,Provider);
 	Navigation.registerComponent('example.SplashScreen', () => SplashScreen,store,Provider);
-	
+	Navigation.registerComponent('example.ChangeAirportsScreen', () => ChangeAirportsScreen,store,Provider);
+
 	Navigation.startSingleScreenApp({
 	  screen: {
 			screen: 'example.SplashScreen', // unique ID registered with Navigation.registerScreen

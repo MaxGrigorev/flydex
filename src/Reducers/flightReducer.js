@@ -27,6 +27,8 @@ export const GET_AIRPORT_PENDING = 'GET_AIRPORT_PENDING';
 export const GET_AIRPORT_FULFILLED = 'GET_AIRPORT_FULFILLED';
 export const GET_AIRPORT_REJECTED = 'GET_AIRPORT_REJECTED';
 export const SET_FLAG_FULFILLED = 'SET_FLAG_FULFILLED';
+export const SET_CURRENT_AIRPORT_FULFILLED = 'SET_CURRENT_AIRPORT_FULFILLED';
+
 
 import * as Url from '../Constants/url';
 
@@ -37,6 +39,8 @@ const initialState = { dogs: [],dogsLike:[], allAirport: {}, loadingAllAirport: 
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
+    case SET_CURRENT_AIRPORT_FULFILLED:
+      return { ...state, currentAirport: action.payload};
     case SET_FLAG_FULFILLED:
       return { ...state, loadingAllAirport: true};
 	  case GET_DOG_PENDING:
@@ -155,6 +159,15 @@ export function setFlag() {
 }
 
 
+export function changeAirport(currAirport) {
+  return {
+    type: SET_CURRENT_AIRPORT_FULFILLED,
+    payload: currAirport
+  }
+}
+
+
+
 export function getAllAirport1() {
   return {
     type: GET_AIRPORT,
@@ -173,7 +186,8 @@ export function getAllAirport() {
       let city=airport.city
       let countryName=airport.countryName
       let localTime=airport.localTime
-      hash[airport.fs] = {name,city,countryName,localTime}
+      let fs=airport.fs
+      hash[airport.fs] = {fs,name,city,countryName,localTime}
       return hash
       },
       {}

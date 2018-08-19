@@ -16,6 +16,22 @@ import {status} from '../Constants/status';
 
 class FlightList extends Component {
 
+  static navigatorButtons = {
+    rightButtons: [
+      {
+        title: 'Change', // for a textual button, provide the button title (label)
+        id: 'edit', // id for this button, given in onNavigatorEvent(event) to help understand which button was clicked
+        testID: 'e2e_rules', // optional, used to locate this view in end-to-end tests
+        // disabled: true, // optional, used to disable the button (appears faded and doesn't interact)
+        // disableIconTint: true, // optional, by default the image colors are overridden and tinted to navBarButtonColor, set to true to keep the original image colors
+        showAsAction: 'ifRoom', // optional, Android only. Control how the button is displayed in the Toolbar. Accepted valued: 'ifRoom' (default) - Show this item as a button in an Action Bar if the system decides there is room for it. 'always' - Always show this item as a button in an Action Bar. 'withText' - When this item is in the action bar, always show it with a text label even if it also has an icon specified. 'never' - Never show this item as a button in an Action Bar.
+        buttonColor: 'black', // Optional, iOS only. Set color for the button (can also be used in setButtons function to set different button style programatically)
+        buttonFontSize: 14, // Set font size for the button (can also be used in setButtons function to set different button style programatically)
+        buttonFontWeight: '600', // Set font weight for the button (can also be used in setButtons function to set different button style programatically)
+      }
+    ]
+  };
+
   constructor(props) {
     super(props);
 
@@ -23,16 +39,33 @@ class FlightList extends Component {
       text_breed: '',
       tab_type: 'arr',
     };
-    //this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent.bind(this));
+    this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent.bind(this));
     //this.likeHandle = this.likeHandle.bind(this);
   }
 
-  // onNavigatorEvent(event) {
-  //   if (event.id === 'share') {
-  //     this.props.navigator.push({
-  //       screen: 'example.RNCameraRollPicker',
-  //       title: 'Добавить',
-  //     })
+  onNavigatorEvent(event) { // this is the onPress handler for the two buttons together
+    if (event.type == 'NavBarButtonPress') { // this is the event type for button presses
+      if (event.id == 'edit') { // this is the same id field from the static navigatorButtons definition
+        this.props.navigator.push({
+          screen: 'example.ChangeAirportsScreen',
+          title: 'Change Airports',
+          passProps: {}
+        })
+      }
+    }
+  }
+
+  // onNavigatorEvent(event) { // this is the onPress handler for the two buttons together
+  //   console.log('onNavigatorEvent')
+  //   if (event.type == 'NavBarButtonPress') { // this is the event type for button presses
+  //     console.log('event.id == edit')
+  //     if (event.id == 'edit') { // this is the same id field from the static navigatorButtons definition
+  //       console.log('event.id == edit')
+  //       this.props.navigator.push({
+  //         screen: 'example.ChangeAirportsScreen',
+  //         title: 'Change Airports',
+  //       })
+  //     }
   //   }
   // }
 
@@ -57,7 +90,7 @@ class FlightList extends Component {
   TabVilet=(type)=>{
     console.log('TabVilet')
     this.setState({tab_type: type});
-    if (type==='del') type='dep';
+    if (type==='del') {type='dep';}
     this.props.getAirportInfo(type,this.props.currentAirport);
   }
 
@@ -90,7 +123,7 @@ class FlightList extends Component {
         <Text style={{fontSize:30}}>{status[item.status]} </Text>
       </View >
       <View style={{flex: 1,flexDirection: 'row'}}>
-        <Text style={{fontSize:15}}>{item.departureDate.dateLocal} -- {item.arrivalDate.dateLocal}</Text>
+        <Text style={{fontSize:15}}>{((this.state.tab_type=='arr') ? item.arrivalDate.dateLocal : item.departureDate.dateLocal).slice(11,16)} </Text>
       </View >
     </TouchableOpacity>
     </View >
