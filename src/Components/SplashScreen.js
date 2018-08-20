@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = state => {
 
-	console.log('mapStateToProps', state)
+	//console.log('mapStateToProps', state)
   let storedDogs = state.dogs.map(dog => ({}));
   let storedallAirport={...state.allAirport};
   const storedLoadingAllAirport=state.loadingAllAirport

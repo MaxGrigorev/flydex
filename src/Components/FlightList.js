@@ -54,7 +54,7 @@ class FlightList extends Component {
   }
 
   TabVilet=(type)=>{
-    console.log('TabVilet')
+    //console.log('TabVilet')
     this.setState({tab_type: type});
     if (type==='del') {type='dep';}
     this.props.getAirportInfo(type,this.props.currentAirport);
@@ -83,7 +83,7 @@ class FlightList extends Component {
         alignItems: 'center',}}>
         <Text style={{fontSize:20}}>{((this.state.tab_type=='arr') ? item.arrivalDate.dateLocal : item.departureDate.dateLocal).slice(11,16)} </Text>
         <View style={{flex: 1,flexDirection: 'column'}}>
-        <Text style={{fontSize:20}}>{(this.state.tab_type=='arr') ? this.props.allAirport[item.departureAirportFsCode].city:this.props.allAirport[item.arrivalAirportFsCode].city} {(this.state.tab_type=='arr') ? item.departureAirportFsCode : item.arrivalAirportFsCode} </Text>
+        <Text style={{fontSize:20}}>{(this.state.tab_type=='arr') ? item.departureAirportFsCode : item.arrivalAirportFsCode} </Text>
           <View style={{flex: 1,flexDirection: 'row'}}>
             <Text style={{fontSize:20}}>{item.carrierFsCode} </Text>
             <Text style={{fontSize:20}}>{item.flightNumber} </Text>
@@ -101,7 +101,7 @@ class FlightList extends Component {
     const { dogs } = this.props;
     let ltt=dogs.filter(dog=>(-1<dog.flightNumber.indexOf(this.state.text_breed)))
     if (this.state.tab_type==='del') ltt=ltt.filter(dog=>(dog.status==='D'))
-    console.log('ltt', ltt)
+    //console.log('ltt', ltt)
 
     return (
       <View >
@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = state => {
 
-	console.log('mapStateToProps', state)
+	//console.log('mapStateToProps', state)
   let storedDogs = state.dogs.map(dog => ({...dog }));
   let storedAllAirport={...state.allAirport};
   let storedCurrentAirport={...state.currentAirport};

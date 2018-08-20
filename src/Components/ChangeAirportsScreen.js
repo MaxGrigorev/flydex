@@ -24,7 +24,7 @@ class ChangeAirportsScreen extends Component {
   }
 
   changeHandle=(item)=>{
-    console.log('this.props.dogsLike',this.props.dogsLike)
+    //console.log('this.props.dogsLike',this.props.dogsLike)
     let fs=item.fs
     let obj={}
     obj[fs]=item
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = state => {
 
-	console.log('mapStateToProps', state)
+	//console.log('mapStateToProps', state)
   let storedAllAirport={...state.allAirport};
   return {
     allAirport:storedAllAirport,

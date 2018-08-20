@@ -41,7 +41,7 @@ export default function reducer(state = initialState, action) {
 export function getAirportInfo(type='arr',currentAirports) {
   fscode=Object.keys( currentAirports)[0]
   dateTime=changeToDateTimeUrl(currentAirports[fscode].localTime)
-  console.log('getArrival' ,Object.keys( currentAirports)[0])
+  //console.log('getArrival' ,Object.keys( currentAirports)[0])
   return {
     type: GET_DOG,
     payload: axios.get(`https://api.flightstats.com/flex/flightstatus/rest/v2/json/airport/status/${fscode}/${type}/${dateTime}?appId=b842b7e6&appKey=4682ce2ea97524e76b0e722f83a66b90&utc=false&numHours=6&maxFlights=50`)
@@ -58,15 +58,15 @@ function changeToDateTimeUrl(localTime) {
   //2)4,7,10 on /
   //3)11==0 delete -> 8==0 delete -> 5==0 delete
   let sub=localTime.slice(0,13)
-  console.log('sub',sub)
+  //console.log('sub',sub)
   sub=sub.replaceAt(10, '/')
   sub=sub.replaceAt(7, '/')
   sub=sub.replaceAt(4, '/')
-  console.log('sub',sub)
+  //console.log('sub',sub)
   if (sub[11]==='0') sub=sub.replace('/0', '/')
   if (sub[8]==='0') sub=sub.replace('/0', '/')
   if (sub[5]==='0') sub=sub.replace('/0', '/')
-  console.log('sub',sub)
+  //console.log('sub',sub)
   
   return sub
 }
@@ -99,8 +99,8 @@ export function getAllAirport1() {
 
 export function getAllAirport() {
   //countryCode/RU  active  all
-  let allAirports=axios.get('https://api.flightstats.com/flex/airports/rest/v1/json/active?appId=b842b7e6&appKey=4682ce2ea97524e76b0e722f83a66b90').then((response)=> {
-    console.log('getAllAirport',response)
+  let allAirports=axios.get('https://api.flightstats.com/flex/airports/rest/v1/json/countryCode/RU?appId=b842b7e6&appKey=4682ce2ea97524e76b0e722f83a66b90').then((response)=> {
+    //console.log('getAllAirport',response)
     let tmp=response.data.airports.reduce(
       (hash, airport) => {
       let name=airport.name
@@ -113,7 +113,7 @@ export function getAllAirport() {
       },
       {}
      );
-    console.log('tmp',tmp)
+    //console.log('tmp',tmp)
     return tmp
   })
 
