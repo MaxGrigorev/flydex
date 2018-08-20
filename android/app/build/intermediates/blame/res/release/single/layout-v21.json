@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\GB\\Projects\\skY\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\GB\\Projects\\skY\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
         "merged": "C:\\GB\\Projects\\instaDog\\client\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action_tombstone.xml",
         "source": "C:\\GB\\Projects\\instaDog\\client\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout-v21\\notification_action_tombstone.xml"
     },
@@ -16,11 +20,31 @@
         "source": "C:\\GB\\Projects\\instaDog\\client\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout-v21\\notification_action.xml"
     },
     {
+        "merged": "C:\\GB\\Projects\\skY\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\bottom_navigation_small_item.xml",
+        "source": "C:\\GB\\Projects\\skY\\android\\app\\build\\intermediates\\exploded-aar\\com.aurelhubert\\ahbottomnavigation\\2.0.6\\res\\layout-v21\\bottom_navigation_small_item.xml"
+    },
+    {
         "merged": "C:\\GB\\Projects\\instaDog\\client\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\bottom_navigation_small_item.xml",
         "source": "C:\\GB\\Projects\\instaDog\\client\\android\\app\\build\\intermediates\\exploded-aar\\com.aurelhubert\\ahbottomnavigation\\2.0.6\\res\\layout-v21\\bottom_navigation_small_item.xml"
     },
     {
+        "merged": "C:\\GB\\Projects\\skY\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\GB\\Projects\\skY\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\GB\\Projects\\skY\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action.xml",
+        "source": "C:\\GB\\Projects\\skY\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout-v21\\notification_action.xml"
+    },
+    {
         "merged": "C:\\GB\\Projects\\instaDog\\client\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_icon_group.xml",
         "source": "C:\\GB\\Projects\\instaDog\\client\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\GB\\Projects\\skY\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\GB\\Projects\\skY\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\GB\\Projects\\skY\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\bottom_navigation_item.xml",
+        "source": "C:\\GB\\Projects\\skY\\android\\app\\build\\intermediates\\exploded-aar\\com.aurelhubert\\ahbottomnavigation\\2.0.6\\res\\layout-v21\\bottom_navigation_item.xml"
     }
 ]
