@@ -99,7 +99,7 @@ export function getAllAirport1() {
 
 export function getAllAirport() {
   //countryCode/RU  active  all
-  let allAirports=axios.get('https://api.flightstats.com/flex/airports/rest/v1/json/countryCode/RU?appId=b842b7e6&appKey=4682ce2ea97524e76b0e722f83a66b90').then((response)=> {
+  let allAirports=axios.get('https://api.flightstats.com/flex/airports/rest/v1/json/active?appId=b842b7e6&appKey=4682ce2ea97524e76b0e722f83a66b90').then((response)=> {
     console.log('getAllAirport',response)
     let tmp=response.data.airports.reduce(
       (hash, airport) => {

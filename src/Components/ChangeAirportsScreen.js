@@ -57,11 +57,14 @@ class ChangeAirportsScreen extends Component {
 
     return (
       <View >
-        <TextInput
-        style={{height:40, borderColor: 'gray', borderWidth: 1}}
-        onChangeText={(text_breed) => this.setState({text_breed})}
-        value={this.state.text_breed}
-        />
+        <View style={{height:40,flexDirection: 'row',borderRadius: 50,borderColor: 'gray',borderWidth: 1,marginVertical:5}} >
+        <Image  source={require('../img/search-icon.png')}  style={{width: 40, height: 40,}}/>
+          <TextInput
+            style={{height:40,flex:1,margin:5,fontSize:20}}
+            onChangeText={(text_breed) => this.setState({text_breed})}
+            value={this.state.text_breed}
+          />
+        </View >
         <FlatList
           styles={styles.container}
           data={ltt}

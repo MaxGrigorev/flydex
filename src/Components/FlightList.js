@@ -72,21 +72,26 @@ class FlightList extends Component {
   }
 
 //renderItem={({item}) => <View><Image source={{uri: item._id}} style={{width: 400, height: 400}}/><Text style={styles.item}>{item.breed}</Text></View>}
-//{this.props.allAirport[item.departureAirportFsCode].city}
+//{(this.state.tab_type=='arr') ? this.props.allAirport[item.departureAirportFsCode].city:this.props.allAirport[item.arrivalAirportFsCode].city}
   renderItem = ({ item }) => (
     <View >
 	  
     <TouchableOpacity
       style={styles.item}
       >
-      <View style={{flex: 1,flexDirection: 'row'}}>
-        <Text style={{fontSize:30}}> {(this.state.tab_type=='arr') ? item.departureAirportFsCode : item.arrivalAirportFsCode} </Text>
-        <Text style={{fontSize:30}}>{item.carrierFsCode} </Text>
-        <Text style={{fontSize:30}}>{item.flightNumber} </Text>
-        <Text style={{fontSize:30}}>{status[item.status]} </Text>
-      </View >
-      <View style={{flex: 1,flexDirection: 'row'}}>
-        <Text style={{fontSize:15}}>{((this.state.tab_type=='arr') ? item.arrivalDate.dateLocal : item.departureDate.dateLocal).slice(11,16)} </Text>
+      <View style={{flex: 1,flexDirection: 'row',borderColor: 'black',borderBottomWidth: 1,justifyContent: 'center',
+        alignItems: 'center',}}>
+        <Text style={{fontSize:20}}>{((this.state.tab_type=='arr') ? item.arrivalDate.dateLocal : item.departureDate.dateLocal).slice(11,16)} </Text>
+        <View style={{flex: 1,flexDirection: 'column'}}>
+        <Text style={{fontSize:20}}>{(this.state.tab_type=='arr') ? this.props.allAirport[item.departureAirportFsCode].city:this.props.allAirport[item.arrivalAirportFsCode].city} {(this.state.tab_type=='arr') ? item.departureAirportFsCode : item.arrivalAirportFsCode} </Text>
+          <View style={{flex: 1,flexDirection: 'row'}}>
+            <Text style={{fontSize:20}}>{item.carrierFsCode} </Text>
+            <Text style={{fontSize:20}}>{item.flightNumber} </Text>
+            
+          </View >
+          
+        </View >
+        <Text style={{fontSize:20}}>{status[item.status]} </Text>
       </View >
     </TouchableOpacity>
     </View >
@@ -100,36 +105,40 @@ class FlightList extends Component {
 
     return (
       <View >
-        <View style={{height:40,flexDirection: 'row',borderColor: 'gray',borderWidth: 1}} >
+        <View style={{height:40,flexDirection: 'row',justifyContent: 'space-between',
+        alignItems: 'center'}} >
 
           <TouchableOpacity
-            style={{flex: 1,height:40,borderColor: 'gray',borderWidth: 1}}
+            style={{height:40,}}
             onPress={this.TabVilet.bind(this,'arr')}
             >
-              <Text style={{fontSize:30,flex: 1,}}>Arrival</Text>
+              <Text style={(this.state.tab_type==='arr')? styles.tabYellow:styles.tab}>Arrival</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
-            style={{flex: 1,height:40,borderColor: 'gray',borderWidth: 1}}
+            style={{height:40,}}
             onPress={this.TabVilet.bind(this,'dep')}
             >
-              <Text style={{fontSize:30,flex: 1,}}>Departure</Text>
+              <Text style={(this.state.tab_type==='dep')? styles.tabYellow:styles.tab}>Departure</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
-            style={{flex: 1,height:40,borderColor: 'gray',borderWidth: 1}}
+            style={{height:40,}}
             onPress={this.TabVilet.bind(this,'del')}
             >
-              <Text style={{fontSize:30,flex: 1,}}>Delay</Text>
+              <Text style={(this.state.tab_type==='del')? styles.tabYellow:styles.tab}>Delay</Text>
           </TouchableOpacity>
 
           
         </View >
-        <TextInput
-          style={{height:40, borderColor: 'gray', borderWidth: 1}}
-          onChangeText={(text_breed) => this.setState({text_breed})}
-          value={this.state.text_breed}
-        />
+        <View style={{height:40,flexDirection: 'row',borderRadius: 50,borderColor: 'gray',borderWidth: 1,marginVertical:5}} >
+        <Image  source={require('../img/search-icon.png')}  style={{width: 40, height: 40,}}/>
+          <TextInput
+            style={{height:40,flex:1,margin:5,fontSize:20}}
+            onChangeText={(text_breed) => this.setState({text_breed})}
+            value={this.state.text_breed}
+          />
+        </View >
         <FlatList
           styles={styles.container}
           data={ltt}
@@ -145,8 +154,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1
   },
-  item: {
-  }
+  tab: {fontSize:30,fontWeight: 'bold',},
+  tabYellow: {fontSize:30,fontWeight: 'bold',color:'orange'}
 });
 
 const mapStateToProps = state => {
