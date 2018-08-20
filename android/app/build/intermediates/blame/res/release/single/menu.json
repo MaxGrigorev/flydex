@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\GB\\Projects\\skY\\android\\app\\build\\intermediates\\res\\merged\\release\\menu\\stub.xml",
+        "source": "C:\\GB\\Projects\\skY\\android\\app\\build\\intermediates\\exploded-aar\\test\\react-native-navigation\\unspecified\\res\\menu\\stub.xml"
+    },
+    {
+        "merged": "C:\\GB\\Projects\\skY\\android\\app\\build\\intermediates\\res\\merged\\release\\menu\\search_item.xml",
+        "source": "C:\\GB\\Projects\\skY\\android\\app\\build\\intermediates\\exploded-aar\\test\\react-native-navigation\\unspecified\\res\\menu\\search_item.xml"
+    },
+    {
         "merged": "C:\\GB\\Projects\\instaDog\\client\\android\\app\\build\\intermediates\\res\\merged\\release\\menu\\stub.xml",
         "source": "C:\\GB\\Projects\\instaDog\\client\\android\\app\\build\\intermediates\\exploded-aar\\test\\react-native-navigation\\unspecified\\res\\menu\\stub.xml"
     },
